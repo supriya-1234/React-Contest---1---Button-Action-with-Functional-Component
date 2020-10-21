@@ -1,17 +1,16 @@
-import React, {Component, useState} from "react";
+import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
+  const paragraph =
+    "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
   return (
-    const paragraph="Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
     <div id="main">
-  
-    <button id="click">
-      <p id="para">{paragraph}</p>
+      <button id="click">
+        <p id="para">{paragraph}</p>
       </button>
     </div>
   );
 }
-
 
 export default App;
