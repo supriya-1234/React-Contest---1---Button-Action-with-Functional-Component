@@ -2,13 +2,16 @@ import React, { Component, useState } from "react";
 import "./../styles/App.css";
 
 function App() {
-  const paragraph =
-    "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy";
+  const [para,setPara] =React.useState(false);
+  function renderPara(){
+    return(<p id="para">"Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy"</p>);
+  }
   return (
     <div id="main">
-      <button id="click">
-        <p id="para">{paragraph}</p>
+      <button id="click" onClick={()=>{setPara(true)}>
+       Click 
       </button>
+      {para?renderPara():""}
     </div>
   );
 }
